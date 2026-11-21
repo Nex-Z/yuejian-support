@@ -1,0 +1,28 @@
+:root { color-scheme: light dark; --paper: #fbfaf8; --ink: #232129; --muted: #625e67; --rule: #d8d4d5; --link: #a32243; --button: #9c203e; --accent: #f43f5e; }
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #201e23; --ink: #f2eef0; --muted: #c8bfc5; --rule: #57505a; --link: #ff9bad; --button: #922344; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+header, main, footer { max-width: 48rem; margin: auto; padding-inline: clamp(1.15rem, 5vw, 3rem); }
+header { display: flex; gap: .6rem; align-items: center; margin-block: 1rem 2.5rem; flex-wrap: wrap; }
+.brand { display: inline-flex; align-items: center; gap: .65rem; color: var(--ink); font-weight: 700; text-decoration: none; margin-right: auto; }
+.brand img { width: 2.5rem; height: 2.5rem; border-radius: 23%; }
+nav { display: flex; gap: .85rem; flex-wrap: wrap; }
+nav a { color: var(--muted); font-size: .9rem; text-decoration: none; padding-block: .6rem; }
+nav a[aria-current=page] { color: var(--ink); text-decoration: underline var(--accent) 2px; text-underline-offset: .4rem; }
+h1, h2 { font-family: "Songti SC", "STSong", "STIX Two Text", Georgia, serif; line-height: 1.35; }
+h1 { font-size: clamp(2.15rem, 7vw, 3.6rem); margin: 0 0 1rem; }
+h2 { font-size: 1.45rem; margin: 2.2rem 0 .55rem; }
+p { margin: .5rem 0 1rem; }
+a { color: var(--link); overflow-wrap: anywhere; text-underline-offset: .18rem; }
+a:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.button { display: inline-block; color: white; background: var(--button); padding: .55rem 1.1rem; border-radius: .55rem; text-decoration: none; font-weight: 650; }
+.actions { display: flex; align-items: center; gap: 1.1rem; flex-wrap: wrap; margin: 1rem 0; }
+.note, footer { color: var(--muted); }
+details { border-bottom: 1px solid var(--rule); padding: .6rem 0; }
+summary { cursor: pointer; font-weight: 600; padding: .35rem 0; }
+li + li { margin-top: .45rem; }
+ol { padding-left: 1.5rem; }
+footer { margin-block: 4rem 1.5rem; font-size: .9rem; }
+footer p { border-top: 1px solid var(--rule); padding-top: .8rem; }

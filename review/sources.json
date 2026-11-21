@@ -1,0 +1,44 @@
+[
+  {
+    "bookSourceName": "阅见示例 A",
+    "bookSourceUrl": "https://nex-z.github.io/yuejian-support/review/catalogue.html?source=a",
+    "searchUrl": "catalogue.html#{{key}}",
+    "exploreUrl": "原创短篇::catalogue.html",
+    "ruleSearch": {
+      "bookList": ".book",
+      "name": "h1@a@text",
+      "author": ".author@text",
+      "bookUrl": "h1@a@href",
+      "intro": ".intro@text"
+    },
+    "ruleToc": {
+      "chapterList": "#chapters > li > a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "ruleContent": {
+      "content": "article@text"
+    }
+  },
+  {
+    "bookSourceName": "阅见示例 B",
+    "bookSourceUrl": "https://nex-z.github.io/yuejian-support/review/catalogue.html?source=b",
+    "searchUrl": "catalogue.html#{{key}}",
+    "exploreUrl": "@js:'原创短篇::catalogue.html'",
+    "ruleSearch": {
+      "bookList": ".book",
+      "name": "h1@a@text",
+      "author": ".author@text",
+      "bookUrl": "h1@a@href",
+      "intro": ".intro@text"
+    },
+    "ruleToc": {
+      "chapterList": "#chapters > li > a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "ruleContent": {
+      "content": "article@text"
+    }
+  }
+]
